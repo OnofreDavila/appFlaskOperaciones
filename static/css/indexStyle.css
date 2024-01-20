@@ -1,0 +1,56 @@
+:root {
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --primario: #FF33EC;
+    --secundario: #CCF404;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+}
+/*Globales*/
+html{
+    font-size: 62.5%; /* para convertir 1REM = 10 PX */
+    box-sizing: border-box; /* metodo para mejorar el trabajo  con el box model*/
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {   /*metodo para mejorar el trabajo con el box model */
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px /* para convertir 1REM = 10px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    margin: 0;
+    background-color: var(--blanco);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10rem;
+}
+
+.ej1 {
+    background-color: var(--primario);
+}
+
+.ej2 {
+    background-color: var(--secundario);
+}
